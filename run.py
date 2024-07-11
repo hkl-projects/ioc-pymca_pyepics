@@ -1,6 +1,6 @@
 from PyMca5.PyMcaGui.pymca.PyMcaMain import PyMcaMain
 from PyMca5.PyMcaGui import PyMcaQt as qt
-import pyepics
+import epics # pyepics
 
 app = qt.QApplication([])
 wind = PyMcaMain()

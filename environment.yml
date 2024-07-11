@@ -4,9 +4,8 @@ channels:
   - defaults
 dependencies:
   - python=3.10
-  - pyepics
   - pip
   - pip:
 #    - -r requirements.txt
     - git+https://github.com/hkl-projects/pymca.git
-
+    - pyepics
