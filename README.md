@@ -39,5 +39,8 @@
 
 * provided script: run.py
 	* specify the path to your datafile as indicated
+	* https://www.pythonguis.com/tutorials/creating-your-first-pyqt-window/
+		* wind.show()
+		* app.exec()
 
 * note: cannot run this from the top directory of pymca, the imports will not work
