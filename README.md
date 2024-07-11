@@ -1,6 +1,11 @@
 Integration of PyMCA (https://github.com/vasole/pymca) and EPICS (https://epics.anl.gov/)
 
 # To run
+install conda environment
+```bash
+conda env create -f environment.yml
+```
+
 activate conda environment 
 ```bash
 conda activate pymca
