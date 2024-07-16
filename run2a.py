@@ -2,13 +2,19 @@ from PyMca5.PyMcaGui.pymca.PyMcaMain import PyMcaMain
 from PyMca5.PyMcaGui.pymca.ScanWindowInfoWidget import GraphInfoWidget
 from PyMca5.PyMcaGui import PyMcaQt as qt
 import epics # pyepics
+import time
  
 app = qt.QApplication([])
 wind = PyMcaMain()
 
 wind.sourceWidget.sourceSelector.openSource('/epics/support/pymca/data/exp798/Datafiles/HB3_exp0798_scan0090.dat') # line 
+wind.show()
+time.sleep(1)
+#app.exec()
 info = GraphInfoWidget(wind)
+time.sleep(1)
 print(info.getInfo())
+#time.sleep(5)
 
 # # OR
 # from PyMca5.PyMcaGui.pymca import ScanWindowInfoWidget
