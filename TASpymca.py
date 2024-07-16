@@ -5,6 +5,7 @@ from PyMca5 import PyMcaDataDir
 #from PyMca5.PyMcaGui.pymca import QDispatcher
 #from PyMca5.PyMcaGui.plotting.PlotWindow import PlotWindow as pltwind 
 import epics
+import os
 
 class TASpymca():
     def __init__(self):
@@ -102,7 +103,7 @@ class TASpymca():
 
         '''       
         self.wind.dispatcherOtherSignalsSlot({
-            'SourceName': [f'{self.datafilepath}{self.datafile_name}'],
+            'SourceName': [f'{self.fname}'],
             'SourceType': 'SpecFile',
             'event': 'SelectionTypeChanged',
             'SelectionType': 'Counters'
